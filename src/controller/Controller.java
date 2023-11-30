@@ -1,3 +1,7 @@
+package controller;
+
+import game.Game;
+
 /**
  * Controller
  */

@@ -1,3 +1,8 @@
+package display;
+
+import game.Game;
+import input.Input;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferStrategy;

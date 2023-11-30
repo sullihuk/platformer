@@ -1,3 +1,7 @@
+package controller;
+
+import controller.Controller;
+import input.Input;
 import java.awt.event.KeyEvent;
 
 /**

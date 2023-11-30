@@ -1,4 +1,12 @@
-import java.awt.*;
+package game;
+
+import display.Display;
+import controller.PlayerController;
+//import core.*;
+import entity.*;
+import input.Input;
+
+//import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 

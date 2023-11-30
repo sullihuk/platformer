@@ -1,3 +1,7 @@
+package entity;
+
+import core.*;
+import controller.*;
 import java.awt.*;
 
 /**
