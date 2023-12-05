@@ -1,14 +1,14 @@
 package core;
 
 public enum Direction {
-  S(0),
-  SW(1),
-  W(2),
-  NW(3),
-  N(4),
-  NE(5),
-  E(6),
-  SE(7);
+  L(0),
+  R(1),
+  U(2),
+  D(3);
+  // N(4),
+  // NE(5),
+  // E(6),
+  // SE(7);
 
   private int animationRow;
 
@@ -19,24 +19,26 @@ public enum Direction {
   public static Direction fromMovement(Movement movement) {
     double x = movement.getVector().getX();
     double y = movement.getVector().getY();
-    if (x == 0 && y > 0)
-      return S;
-    if (x < 0 && y == 0)
-      return W;
-    if (x == 0 && y < 0)
-      return N;
     if (x > 0 && y == 0)
-      return E;
-    if (x < 0 && y > 0)
-      return SW;
-    if (x < 0 && y < 0)
-      return NW;
-    if (x > 0 && y < 0)
-      return NE;
-    if (x > 0 && y > 0)
-      return SE;
+      return L;
+    if (x < 0 && y == 0)
+      return R;
+    if (x == 0 && y < 0)
+      return D;
+    if (x == 0 && y > 0)
+      return U;
+    /*
+     * if (x < 0 && y > 0)
+     * return SW;
+     * if (x < 0 && y < 0)
+     * return NW;
+     * if (x > 0 && y < 0)
+     * return NE;
+     * if (x > 0 && y > 0)
+     * return SE;
+     */
 
-    return S;
+    return R;
   }
 
   public int getAnimationRow() {

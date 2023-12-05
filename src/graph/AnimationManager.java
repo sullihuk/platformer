@@ -19,11 +19,11 @@ public class AnimationManager {
 
   public AnimationManager(SpriteSet spriteSet) {
     this.spriteSet = spriteSet;
-    this.updatePreFrame = 20;
+    this.updatePreFrame = 6;
     this.frameIndex = 0;
     this.currentFrameTime = 0;
     this.directionIndex = 0;
-    playAnimation("dino2");
+    playAnimation("dino1");
   }
 
   public Image getSprite() {

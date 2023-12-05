@@ -18,7 +18,7 @@ public abstract class MovingEntity extends GameObject {
     super();
     this.controller = controller;
     this.movement = new Movement(5);
-    this.direction = Direction.S;
+    this.direction = Direction.L;
     this.animationManager = new AnimationManager(spriteLibrary.getUnit("dino"));
   }
 
